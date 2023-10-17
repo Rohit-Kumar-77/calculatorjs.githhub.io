@@ -1,0 +1,88 @@
+html,
+body {
+  height: 100%;
+}
+body,
+input {
+  padding: 0;
+  margin: 0;
+  outline: none;
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 16px;
+  color: #eee;
+}
+h1 {
+  font-weight: 500;
+  text-align: center;
+  position: relative;
+  top: -20px;
+}
+.main-block,
+.info {
+  display: flex;
+  flex-direction: column;
+}
+.main-block {
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  min-height: 100%;
+  margin: auto;
+}
+form {
+  border-radius: 30px;
+  width: 80%;
+  margin: auto;
+  padding: 25px;
+  background: rgba(0, 0, 0, 0.9);
+}
+input {
+  padding: 5px;
+  margin-bottom: 20px;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #eee;
+}
+input::placeholder {
+  color: #eee;
+}
+
+.btn {
+  width: 60%;
+  margin: auto;
+}
+button {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  background: white;
+  color: rgba(0, 0, 0, 0.9);
+  padding: 5px 10px;
+  margin: 20px 13px 0;
+  border-radius: 25%;
+  border: none;
+  transition: 0.3s;
+  font-size: 25px;
+  font-weight: 600;
+}
+button:hover {
+  background: transparent;
+  color: #fff;
+}
+
+#Result {
+  display: block;
+  margin: auto;
+}
+@media (min-width: 568px) {
+  .info {
+    flex-flow: row wrap;
+    justify-content: space-between;
+  }
+  input {
+    width: 46%;
+  }
+  input.fname {
+    width: 50%;
+  }
+}
